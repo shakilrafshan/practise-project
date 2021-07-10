@@ -1,0 +1,64 @@
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid gray;
+    padding: 20px 0;
+}
+
+.flex-cell{
+    width: 100px;
+    height: 100px;
+    background-color:cornsilk;
+    border: 2px solid red;
+    box-shadow:0 5 15 gray;
+    
+}
+.grid-container{
+    display: grid;
+    grid-gap: 20px;
+    
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-cell{
+    height: 100px;
+    background-color:hotpink;
+    border: 2px solid red;
+    box-shadow:0 5 15 gray;
+    margin-top: 20px;
+   
+}
+
+.calender{
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: 50px repeat(5, 1fr);
+    height: 500px;
+   margin: 100px 10px;
+    
+}
+.date, .day{
+    
+    background-color: #78889A;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border-radius: 20px;
+}
+
+.others-month{
+    background-color: #D4D2D4;
+}
+.day{
+    color:white;
+    background-color: black;
+}
+
+ .day:hover,.date:hover{
+ box-shadow: 1px 5px 15px gray; 
+ background-color: ivory;
+ color: blue;
+}
