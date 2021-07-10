@@ -1,0 +1,47 @@
+.food-container{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+   margin: 100px 0;
+}
+.food{
+    width: 200px;
+    border: 2px solid wheat;
+    padding:5px;
+    margin-top: 20px;
+    
+}
+.food img{
+    width: 150px;
+    height: 150px;
+    
+}
+.food h1{
+    text-transform:capitalize;
+}
+.food p{
+    text-align: left;
+    
+}
+
+.food button {background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );}
+
+.food button {
+   
+   padding: 10px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: none;
+ }
+
+ .food button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
