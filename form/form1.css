@@ -1,0 +1,61 @@
+form{
+   padding:50px 40px;
+}
+label{
+    font-size: 25px;
+    color:blue;
+}
+input{
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+}
+
+ input[type="submit"]{
+    background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% );
+   padding: 10px 30px;
+   color: white;
+   font-size: 25px;
+   border-radius: 25px;
+   box-shadow: 1px 1px 20px gray;
+}
+input[type="submit"]:hover{
+ transform: scale(1.2);
+
+
+}
+
+.form2 input[type=reset]{
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+    padding: 10px 30px ;
+    color: whitesmoke;
+    font-size: 25px;
+    border: none;
+
+}
+.form2 input[type=reset]:hover{
+    box-shadow: 5px 5px 20px gray;
+
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #FFA17F 0%, #00223E  51%, #FFA17F  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
