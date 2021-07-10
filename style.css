@@ -1,0 +1,48 @@
+.team-section{
+    margin: 10px;
+    
+}
+.team-section h1{
+    text-align: center;
+}
+.team-member{
+   
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.member{
+ width:250px;
+    
+ position: relative;
+ overflow: hidden;
+ 
+}
+.member img{
+    width: 100%;
+    border-radius:10px;
+}
+
+.member-details{
+    position: absolute;
+    top: 0;
+    display: none;
+    text-align: center;
+    background-color: rgba(196, 7, 243, 0.24);
+    color: white;
+    width: 100%;height: 100%;
+    border-radius:10px;
+ 
+    
+}
+
+.member:hover .member-details{
+    display: block;
+    padding-top:40px; 
+   
+}
+.member:hover .photo{
+transform: scale(1.5) ;
+transition: 2s;
+}
