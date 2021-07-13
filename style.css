@@ -1,3 +1,4 @@
+
 .team-section{
     margin: 10px;
     
@@ -45,4 +46,331 @@
 .member:hover .photo{
 transform: scale(1.5) ;
 transition: 2s;
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* common css */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* banner section */
+
+.banner-section img{
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    max-width: 100%;
+  
+}
+.middle-text {
+     position: absolute;
+    top:50%;
+    left: 45%;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    
+    
+}
+.br{
+    
+    font-weight: 700;
+    background-color:#10101191;
+    padding: 10px 15px;
+}
+.architects{
+    color:#f1f1f1;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+}
+.same-section{
+    margin: 30px 30px 0 30px;
+}
+.same-section h1{
+    margin: 10px 0;
+    padding: 16px 0;
+}
+.same-section hr{
+    margin: 30px 0;
+}
+.same-section p{
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+}
+.projects-gallery{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.project {
+    position: relative;
+}
+.project img {
+    width: 100%;
+}
+
+.project div{
+    position: absolute;
+    top:0;
+    background-color:black;
+    color: white;
+    
+    letter-spacing: 1.2px;
+    padding: 5px 10px;
+}
+
+
+.abouts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+}
+.profile{
+    background-color:whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+.profile img{
+    width: 100%;
+    color: wheat;
+    border-radius: 20px;
+}
+.profile h3{
+    font-size: 24px;
+    padding:10px 0;
+}
+.profile h5{
+    font-size: 15px;
+    padding:5px 0;
+    color: rgba(32, 28, 28, 0.74);
+}
+.profile p{
+    font-size: 15px;
+    padding-top:5px;
+    text-align: left;
+    color: rgba(32, 28, 28, 0.74);
+}
+.contact{
+    background-color:#F1F1F1;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+/* new design start */
+.second-banner{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    /* align-items: center; */
+    
+}
+.banner-left{
+    margin-left: 100px;
+    margin-right: 180px;
+    padding: 40px 0;
+}
+
+.banner-left h1{
+    color:#1f1f1f;
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 92px;
+}
+.banner-left  p{
+    font-size: 20px;
+    color: #1f1f1f;
+    margin:24px 0px 25px;
+}
+.banner-left  a{
+    font-size: 20px;
+    color:white;
+    margin-top: 20px;
+    display: inline-block;
+    padding:30px 65px;
+    text-decoration: none;
+    font-weight:700;
+    background-color: blue;
+    border-radius:10px;
+}
+.banner-left  a:hover{
+    border: 2px solid blue;
+    background-color: whitesmoke;
+    color: blue;
+    transition: .5s;  
+}
+.baner-right{
+    margin:32px 24px 32px 0;
+    
+}
+.benner-right img{
+width: 100%;
+}
+
+.brand-area{
+    background-color: #F5F5F5;
+    padding: 64px 0;
+  
+}
+.brand-area p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+.brand-area a{
+    color:blue;
+}
+.brands{
+ display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    margin: 0 40px;
+}
+
+/* icon section css */
+.icon-section{
+    padding: 64px 0;
+}
+.icon-section>p{
+    font-size: 44px;
+    text-align: center;
+    padding-bottom: 65px;
+    color: #1f1f1f;
+}
+.icon-boxes{
+    display: grid;
+   
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 40px;
+    margin: 10px 100px;
+    
+   
+}
+.icon-box{
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+    
+}
+.icon-box img,h3,p{
+    
+    padding:10px;
+    
+ 
+}
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    .banner-section img{
+        position: relative;
+        width: 100%;
+        height: auto;
+    
+    }
+    .middle-text {
+        position: absolute;
+       top:50px;
+       left: 50px;
+       text-align: center;
+       font-size: 25px;
+       color: wheat;   
+   }
+   .architects{
+    color:black;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+}
+    .same-section{
+       padding: 0;
+        margin: 20px;
+    }
+    .projects-gallery, .abouts{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+     .project img, div{
+       border-radius: 20px;
+        
+    }
+    .profile{
+        margin-bottom: 20px;
+    }
+
+    .second-banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .banner-left{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .banner-left h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .banner-left p{
+        padding-top: 0;
+        text-align: center;
+    }
+    .banner-left a{
+    
+    }
+    .baner-right {
+        
+        justify-items: center;
+        align-items: center;
+    }
+    .baner-right img{
+        width:50%;
+    }
+    .brand-area p{
+font-size: 20px;
+    }
+    .brands{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap:40px;
+        grid-column-gap: 20px;
+  
+    }
+    .icon-section p{
+        font-size: 25px;
+       padding-bottom: 15px;
+    }
+    .icon-boxes{
+       grid-template-columns: repeat(1,1fr);
+        margin: 0 20px ;
+        
+       
+       
+    }
+    .icon-box{
+        margin-bottom: 20px;
+    }
 }
