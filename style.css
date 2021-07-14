@@ -25,6 +25,7 @@
     border-radius:10px;
 }
 
+
 .member-details{
     position: absolute;
     top: 0;
@@ -118,12 +119,16 @@ body{
     position: relative;
 }
 .project img {
-    width: 100%;
+    width: 100%; border-radius: 10px;
+}
+.project img:hover{
+    box-shadow: 1px 1px 10px gray;  
 }
 
 .project div{
     position: absolute;
     top:0;
+    border-radius: 10px;
     background-color:black;
     color: white;
     
