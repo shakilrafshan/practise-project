@@ -179,21 +179,23 @@ body{
 
 /* new design start */
 .second-banner{
-    display: flex;
-    justify-content: space-around;
+   margin: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     padding: 50px 0;
-    /* align-items: center; */
+    column-gap: 50px;
+    place-items: center;
     
 }
 .banner-left{
-    margin-left: 100px;
-    margin-right: 180px;
+    /* margin-left: 100px;
+    margin-right: 180px; */
     padding: 40px 0;
 }
 
 .banner-left h1{
     color:#1f1f1f;
-    font-size: 84px;
+    font-size: 80px;
     font-weight: 600;
     line-height: 92px;
 }
@@ -220,7 +222,7 @@ body{
     transition: .5s;  
 }
 .baner-right{
-    margin:32px 24px 32px 0;
+    margin:32px 24px;
     
 }
 .benner-right img{
@@ -280,8 +282,96 @@ width: 100%;
 }
 
 
+.career-section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #EBF3FF;
+    padding:60px 0;
+}
+.career{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
+.career-left{
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.career-right{
+    margin: 0 50px;
+}
+.career-left h3{
+    color:#382d8b;
+    font-size: 28px;
+    font-weight:600;
+    text-align:center;
+    
+}
+.career-left h4{
+    color:#1f1f1f;
+    font-size: 44px;
+    font-size: 28px;
+    line-height: 50px;
+    text-align:center;
+}
+.career-left p{
+    color:#1f1f1f;
+    text-align: justify;text-align:center;
+}
+.career-left div{
+    margin-top: 10px;
+   text-align: center;
+}
+.career-left a{
+    text-decoration: none;
+    color: blue;
+    background-color:white;
+    border: 1px solid blue;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.career-left a:hover{
+    
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+.right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.degree-area{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    background-color:white;
+    border-radius:10px;
+    padding:10px 16px;
+    box-shadow: rgb(0 0 0 / 12%) 0px 0.86px 10px;
+    
+}
 
-
+.degree-area img{
+    width: 52px;height: 52px;
+}
+.degree-area .degree-title{
+   padding-left: 15px;
+}
+.top-title{
+    color: #616161;
+    font-size: 14px;
+    
+    
+}
+.main-title{
+    color: #1f1f1f;
+    font-size:14px;
+font-weight: 700;
+}
 
 @media only screen and (max-width:688px) {
     .banner-section img{
@@ -320,8 +410,8 @@ width: 100%;
     }
 
     .second-banner{
-        flex-direction: column;
-        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
         align-items: center;
         margin: 0;
         padding: 0;
@@ -339,19 +429,17 @@ width: 100%;
         padding-top: 0;
         text-align: center;
     }
-    .banner-left a{
+    .banner-left div{
+       
+        text-align: center;
+    }
+
+   .baner-right img{
+        width:80%;   
+    }
     
-    }
-    .baner-right {
-        
-        justify-items: center;
-        align-items: center;
-    }
-    .baner-right img{
-        width:50%;
-    }
     .brand-area p{
-font-size: 20px;
+    font-size: 20px;
     }
     .brands{
         grid-template-columns: repeat(2, 1fr);
@@ -372,5 +460,25 @@ font-size: 20px;
     }
     .icon-box{
         margin-bottom: 20px;
+    }
+    .career{
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+    .career-left{
+        margin:0;
+    }
+    .career-right{
+        margin: 20px ;
+    }
+    .right{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .degree-area{
+        flex-direction: column;
+    }
+    .degree-area img{
+        width: 100px;
+        height: 100px;
     }
 }
