@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 /* common css */
+*{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -20,6 +23,7 @@ a{
     background-color: black;
     
 } */
+
 
 
 .carousel-price{
@@ -57,8 +61,17 @@ a{
 .card-title, .card-text, .card-price, .card-btn{
     text-align: center;
 }
+.newsletter> h1, P ,div, input[type=email]{
+    color: #1F1F1F;
+    
+
+}
 .card-title,.card-price{
     font-weight:700;
+}
+.card{
+    border: 0;
+    border-radius: 10px;
 }
 .card-btn a{
     background-color:black;
@@ -74,4 +87,7 @@ a{
 .card:hover img{
 transform: scale(1.1);
 transition: 2s;
+}
+.newsletter{
+    padding:146px 0;
 }

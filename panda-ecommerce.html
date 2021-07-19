@@ -12,16 +12,13 @@
 <body>
 
     <!-- header start -->
-    <header>
+    <header id="head">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: black;">
-            <div class="container-fluid mx-3">
+            <div class="container-fluid mx-3 ">
                 <a class="navbar-brand" href="./panda-ecommerce.html">
                     <img  src="./images/logo.png" alt="" width="160" height="40">
                   </a>
-                  <!-- <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form> -->
+                 
               <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                
                 <span class="navbar-toggler-icon"></span>
@@ -30,16 +27,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link "aria-current="page" href="#">Home</a>
+                    <a class="nav-link "aria-current="page" href="#head">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
+                    <a class="nav-link" href="#product">Product</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="#contact">Contact us</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,7 +55,7 @@
               </div>
             </div>
           </nav>
-          <section class="container my-3 ">
+          <section class="container my-3 " >
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -143,17 +140,17 @@
         </section>
 
 
-        <!-- shoe section -->
-<section class="product-section py-5" style="background-color: #F4F4F4;">
+        <!-- product section -->
+<section id="product" class="product-section py-5" style="background-color: #F4F4F4;">
         <section class="container" >
-          <div class="d-flex justify-content-between align-items-center">
-            <h1 class="mb-5">Shoes</h1>
+          <div class="d-flex mb-5 justify-content-between align-items-center">
+            <h1 class="">Shoes</h1>
             <div><a href="" style="color: #FF9D00;">See all</a></div>
           </div>
           <div class="row row-cols-lg-3 row-cols-md-2 g-4 ">
            
-            <div >
-              <div class="card h-100 shadow">
+            <div>
+              <div class="card h-100 shadow ">
                 <img src="./images/shoes/shoe-1.png" class="card-img-top" alt="...">
                 <div class="card-body ">
                   <h5 class="card-title">Reebok Dart Men’s Shoes</h5>
@@ -233,6 +230,17 @@
            
           </div>
         </section>
+      </section>
+
+      <!-- newsletter section -->
+      <section id="contact" class="container newsletter my-5 " style="background-color:#FFF2F1;">
+        <div class="text-center">
+          <h1 >LET'S STAY IN TOUCH</h1>
+        <p>Get updates on sales specials and more</p>
+        <div><input type="email" placeholder="Type your email"></div>
+        <br>
+        <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+        </div>
       </section>
     </main>
 
