@@ -5,6 +5,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .icon-spacer{
     padding-left: 10px;
 }
@@ -50,4 +53,25 @@ body{
 }
 .category-3{
     background-image:linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);   
+}
+.card-title, .card-text, .card-price, .card-btn{
+    text-align: center;
+}
+.card-title,.card-price{
+    font-weight:700;
+}
+.card-btn a{
+    background-color:black;
+    padding: 10px 12px ;
+    color: white;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.card{
+    overflow: hidden;
+}
+.card:hover img{
+transform: scale(1.1);
+transition: 2s;
 }
