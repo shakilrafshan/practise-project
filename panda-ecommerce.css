@@ -9,14 +9,14 @@ body{
     padding-left: 10px;
 }
 /* header css */
-.nav-link{
+/* .nav-link{
     color: black;
 }
 .nav-link:hover{
     color:rgb(10, 255, 71);
     background-color: black;
     
-}
+} */
 
 
 .carousel-price{
@@ -27,6 +27,7 @@ body{
     color: white;
     margin-top: 5px;
 }
+
 .carousel-inner {
     border-radius:10px;
     border:5px solid #FF136F;
@@ -34,7 +35,7 @@ body{
 
 .category{
     padding: 15px 0;
-    border-radius: 15px;color:white;
+    border-radius:10px;color:white;
 }
 .category:hover img{
     transform:rotate(20deg);
