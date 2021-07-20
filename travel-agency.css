@@ -8,6 +8,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+.list li{
+    list-style: none;
+}
+footer a{
+    color:#5E6282;
+    
+}
 .header-section{
     background-image: url(./images/travel-agency/banner.png);background-repeat: no-repeat;background-size:cover;
 }
@@ -77,7 +87,18 @@ height: 80px;
 .course-excerpt{
  color:  #84829A;
 }
-
+.newslatter-section{
+    background-image: url(./images/travel-agency/newslatter.png);
+    background-size:cover;
+    background-attachment: fixed;
+    padding:100px 0;
+    width: 100%;
+    background-position: center center;
+    
+}
+.newslatter-section h1{
+    font-size: 33px; text-align: center; margin:0 100px;
+}
 @media only screen and (max-width:688px) {
     .traveller-img img{
         width: 100%;  
@@ -96,10 +117,17 @@ height: 80px;
        
     }
     .course{
-        border-radius: 25px;
-        
+        border-radius: 25px; 
+    }
+    .newslatter-section{
+        background-position:right center;
         
     }
+    .newslatter-section h1{
+        font-size: 20px;
+    }
+  
+    
 }
 @media only screen and (min-width:688px) and (max-width:992px) {
    
