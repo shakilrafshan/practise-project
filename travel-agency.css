@@ -1,0 +1,67 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+
+/* common css */
+.header-section{
+    background-image: url(./images/travel-agency/banner.png);background-repeat: no-repeat;background-size:cover;
+}
+body{
+    font-family: 'Volkhov', serif;
+}
+.traveller-img img{
+    width: 565px;
+    height: 565px;
+    
+}
+.travel{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hero-p{
+    color:#DF6951;font-size: 20px;
+}
+.hero-title{
+    color:#181E4B;font-size: 80px;
+    font-weight: 700;
+}
+.hero-link a{
+    background-color:#F1a501;
+    color:white;text-decoration: none;
+    
+}
+.hero-link-2 {
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+.fas{
+    font-size: 56px;
+    
+}
+
+
+
+@media only screen and (max-width:688px) {
+    .traveller-img img{
+        width: 500px;
+        height: 500px;
+        
+    }
+    .travel{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .traveller-img img{
+        width: 500px;
+        height: 500px;
+        
+    }
+    .travel{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+}
