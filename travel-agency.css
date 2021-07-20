@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
 
 /* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header-section{
     background-image: url(./images/travel-agency/banner.png);background-repeat: no-repeat;background-size:cover;
 }
@@ -10,8 +15,7 @@ body{
     font-family: 'Volkhov', serif;
 }
 .traveller-img img{
-    width: 565px;
-    height: 565px;
+    width: 100%;
     
 }
 .travel{
@@ -40,26 +44,43 @@ body{
     font-size: 56px;
     
 }
-
-
+.category-section{
+    background-image: url(./images/travel-agency/Frame59.jpg);
+    padding: 50px 0;
+    background-size: cover;
+     background-repeat: no-repeat;
+     background-position:right top;
+     background-attachment: fixed;
+}
+.category-img img{
+width: 90px;
+height: 80px;
+}
+.category-des h3{
+    font-size: 16px;
+    padding:10px 0 0 0;
+}
 
 @media only screen and (max-width:688px) {
     .traveller-img img{
-        width: 500px;
-        height: 500px;
-        
+        width: 100%;  
+    }
+    .hero-link a{
+        font-size: 16px;
+        padding: none;
     }
     .travel{
       
         grid-template-columns: repeat(1,1fr);
     }
+    .hero-title{
+        font-size:50px;
+        text-align: center;
+       
+    }
 }
 @media only screen and (min-width:688px) and (max-width:992px) {
-    .traveller-img img{
-        width: 500px;
-        height: 500px;
-        
-    }
+   
     .travel{
       
         grid-template-columns: repeat(1,1fr);
