@@ -1,0 +1,86 @@
+.testimonail-section{
+    background-color:#9c69e2;
+    border-radius: 50px;
+   
+}
+.review{
+    padding: 60px 70px;
+    border: 5px solid rgb(15, 137, 168);
+    margin: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border-radius: 20px;
+    display: flex;
+}
+.review img{
+    width: 150;
+}
+.citem{
+display: flex;
+align-items: center;
+
+}
+
+
+
+
+@media only screen and (max-width:350px){
+    .review{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:5px;
+        
+        
+    }
+    .review img{
+        width: 100;
+    }
+    .citem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    }
+}
+
+@media only screen and (min-width:350px) and (max-width:688px) {
+    .review{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:5px;
+        
+        
+    }
+    .review img{
+        width: 100;
+    }
+    .citem{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:1024px){
+
+
+    .review{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+        margin: 10px;
+        
+    }
+    .review img{
+        width: 100;
+    }
+    .citem{
+    display: flex;
+    align-items: center;
+    
+    }
+}
